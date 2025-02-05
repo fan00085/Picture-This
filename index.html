@@ -15,7 +15,61 @@
       <h1>Picture This!</h1>
       <h4>My Really Cool Blog Post</h4>
     </div>
-    <img src="images/museum.jpg" alt="placeholder">
+
+    <!-- <img srcset="../landscape/museum-320x.jpg 320w,
+    landscape/museum-480x.jpg 480w,
+    landscape/museum-640x.jpg 640w,
+    landscape/museum-720x.jpg 720w,
+    square/museum-960x960.jpg 960w,
+    square/museum-1280x1280.jpg 1280w,
+    square/museum-1440x1440.jpg 1440w,
+    square/museum-1600x1600.jpg 1600w,
+    square/museum-1920x1920.jpg 1920w,
+    square/museum-2400x2400.jpg 2400w"
+    
+    sizes="
+    (max-width: 320px) 320px,
+    (max-width: 480px) 480px,
+    (max-width: 640px) 640px,
+    (max-width: 720px) 720px,
+    (max-width: 960px) 960px,
+    (max-width: 1280px) 1280px,
+    (max-width: 1440px) 1440px,
+    (max-width: 1600px) 1600px,
+    (max-width: 1920px) 1920px,
+    (max-width: 2400px) 2400px," 
+
+    src="landscape/museum-720x.jpg"
+    
+    alt="placeholder"> -->
+
+
+    <picture>
+      <source media="(min-width: 960px)" 
+            srcset="square/museum-480x480.jpg 480w,
+                      square/museum-960x960.jpg 960w,
+                      square/museum-1280x1280.jpg 1280w,
+                      square/museum-1440x1440.jpg 1440w,
+                      square/museum-1600x1600.jpg 1600w,
+                      square/museum-1920x1920.jpg 1920w,
+                      square/museum-2400x2400.jpg 2400w"
+              
+            sizes="(min-width: 960px) 50vw">
+  
+      <img src="landscape/museum-720x.jpg" 
+          srcset="landscape/museum-320x.jpg 320w,
+                   landscape/museum-480x.jpg 480w,
+                   landscape/museum-640x.jpg 640w,
+                   landscape/museum-720x.jpg 720w,
+                   landscape/museum-960x.jpg 960w,
+                   landscape/museum-1440x.jpg 1440w,
+                   landscape/museum-1920x.jpg 1920w,
+                   landscape/museum-2880x.jpg 2880w"
+           
+          sizes="(max-width: 959px)"
+           
+          alt="Placeholder image">
+  </picture>
 
   </header>
 </body>
